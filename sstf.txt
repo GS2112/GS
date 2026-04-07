@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<stdlib.h>
+int min(int q[],int n)
+{
+int i,min=1000,index,d;
+return index;
+}
+void main()
+{
+int rq[199],initial,i,headm=0,n,min=1000,index,d,count=0;
+printf("\nEnter the No Request\n");
+scanf("%d",&n);
+printf("\nEnter the sequence\n");
+for ( i = 0; i <n; i++)
+scanf("%d",&rq[i]);
+printf("\nEnter the initial\n");
+scanf("%d",&initial);
+while (count!=n)
+{
+min=1000;
+for(i=0;i<n;i++)
+{
+d=abs(rq[i]-initial);
+if(min>=d)
+{
+min=d;
+index=i;
+}
+}
+}
+headm+=min;
+initial=rq[index];
+rq[index]=1000;
+count++;
+printf("\ntotal moment %d",headm);
+}
